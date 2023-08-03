@@ -1,0 +1,126 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+  padding: 40px 0;
+}
+
+.stepped-animation {
+  height: 100%;
+ z-index: 1;
+  position: relative;
+}
+
+.single-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  
+  &__inner {
+    
+    padding: 2rem;
+  }
+}
+.single-step__inner{
+  position: absolute;
+  top: 0;
+  width: 550px;
+}
+.big-font{
+  right: 100px;
+  text-align: end;
+  font-size: 90px;
+}
+
+.small-font{
+  right: 50px;
+  font-size: 40px;
+}
+/* ↓ ↓ Irrelevant Styling ↓ ↓ */
+
+.bg-container{
+  height: 510px;
+  width: 850px;
+  margin-top: 60px;
+  margin-left: -250px;
+}
+.bg-container img{
+  height: 100%;
+  width: 100%;
+}
+section {
+  margin: 0;
+  height: 100vh;
+  background-image: url(images/lav.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 19px;
+}
+.navbar p{
+  margin: 0;
+}
+
+
+
+
+.image {
+  background: transparent url('https://source.unsplash.com/okVXy9tG3KY/720x1280') no-repeat;
+  background-size: cover;
+}
+
+.one{
+  width: 100%;
+  height: 625px;
+}
+.single-step-img {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 800px;
+  height: 500px;
+  opacity: 0;
+  
+  &__inner {
+    
+    padding: 2rem;
+  }
+}
+
+.single-step__inner-img{
+  position: absolute;
+  top: 0;
+height: 100%;
+  width: 100%;
+}
+
+.stepped-animation-img {
+  height: 100%;
+ z-index: 0;
+  position: relative;
+}
